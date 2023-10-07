@@ -1,7 +1,13 @@
 # ODD2023-DataScience-Ex-03
 ### AIM
 
+To read the given data and perform the univariate analysis with different types of plots.
+
 ### ALGORITHM
+
+1. Read the given data.
+2. Perform data cleaning process.
+3. Visulaize and analyse the data using various plots.
 
 ### CODE AND OUTPUT
 ```
@@ -46,7 +52,6 @@ sns.countplot(x='species',data=df)
 ```
 ![image](https://github.com/Pranav-AJ/ODD2023-DataScience-Ex-03/assets/118904526/52ee5e48-9acf-4a40-955d-12819d0d0071)
 
-# **UNIVARIATE DATA ANALYSIS**
 ```
 dfv=df.loc[df['species']=='virginica']
 dfv
@@ -57,24 +62,36 @@ dfv
 plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'*')
 plt.show()
 ```
+![image](https://github.com/Pranav-AJ/ODD2023-DataScience-Ex-03/assets/118904526/79b63223-dd97-4b5e-8ce0-2128a0b7792b)
 
 ```
 dfs=df[df['species']=='setosa']
 dfs
 ```
+![image](https://github.com/Pranav-AJ/ODD2023-DataScience-Ex-03/assets/118904526/2d3c3ddd-3228-4267-bd1e-790e07516e25)
+
 ```
 plt.plot(dfs['sepal_length'],np.zeros_like(dfs['sepal_length']),'+')
 plt.xlabel('sepal length')
 plt.show()
 ```
+
+![image](https://github.com/Pranav-AJ/ODD2023-DataScience-Ex-03/assets/118904526/dfc91d7a-90ee-4e21-a8ed-67349dd03a28)
+
 ```
 dfc=df.loc[df['species']=='versicolor']
 dfc
 ```
+
+![image](https://github.com/Pranav-AJ/ODD2023-DataScience-Ex-03/assets/118904526/7d85424d-19cc-4759-80d3-fbed617983d4)
+
 ```
 plt.plot(dfc['sepal_length'],np.zeros_like(dfc['sepal_length']),'x')
 plt.show()
 ```
+
+![image](https://github.com/Pranav-AJ/ODD2023-DataScience-Ex-03/assets/118904526/dc2255f6-9344-4344-9783-5f8722baadfa)
+
 ```
 plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'*')
 plt.plot(dfs['sepal_length'],np.zeros_like(dfs['sepal_length']),'+')
@@ -82,3 +99,5 @@ plt.plot(dfc['sepal_length'],np.zeros_like(dfc['sepal_length']),'x')
 plt.xlabel('sepal length')
 plt.show()
 ```
+
+![image](https://github.com/Pranav-AJ/ODD2023-DataScience-Ex-03/assets/118904526/3fcdd602-5283-45d3-a9f8-1600757c2186)
